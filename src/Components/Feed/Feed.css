@@ -1,0 +1,20 @@
+.feed {
+    display: flex;
+}
+
+.feedLeftBar {
+    flex: 3;
+    background-color: #F0F2F5;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
+}
+
+.feedPost {
+    flex: 5;
+}
+
+.feedRightBar {
+    flex: 4;
+    background-color: #F0F2F5;
+}
