@@ -8,13 +8,20 @@
     height: calc(100vh - 50px);
     position: sticky;
     top: 50px;
+    border-radius: 5px;
+
 }
 
 .feedPost {
     flex: 5;
+    margin: 5px 10px;
+    border-radius: 5px;
+
 }
 
 .feedRightBar {
     flex: 4;
     background-color: #F0F2F5;
+    border-radius: 5px;
+
 }
