@@ -2,7 +2,6 @@ import React from 'react'
 import './Posts.css'
 
 function Posts(props) {
-    console.log(props);
 
     return (
         props.posts.slice(0).reverse().map((post) => {

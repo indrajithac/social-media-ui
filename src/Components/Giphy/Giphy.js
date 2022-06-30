@@ -6,7 +6,6 @@ import axios from 'axios';
 
 
 function Giphy(props) {
-    console.log(props);
     const [gifs, setGifs] = useState([])
     const [gifSearch, setGifSearch] = useState("")
     const [loading, setLoading] = useState(false)
@@ -25,7 +24,6 @@ function Giphy(props) {
                 }
             });
 
-            console.log(results.data.data);
             setGifs(results.data.data);
 
         } catch (error) {
