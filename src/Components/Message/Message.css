@@ -1,74 +1,90 @@
 .message {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-  }
-  
-  .messageWrapper {
-    padding: 10px;
-  }
-  
-  .messageTop {
-    display: flex;
-    align-items: center;
-  }
-  
-  .messageProfileImg {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-  }
-  
-  .messageInput {
-    border: none;
-    width: 80%;
-  }
-  
-  .messageInput:focus {
-    outline: none;
-  }
-  
-  .MessageHr {
-    margin: 20px;
-  }
-  
-  .messageBottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .messageOptionText{
-      font-size: 14px;
-      font-weight: 500;
-  }
-  .gif{
-    width: 90%;
-    margin: 20px;
-    border: 0.9px solid #9A9A9A;       
-    border-radius: 5px;
-    
-    
-  }
-  .loadGifButton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
 
-  .postButton{
-      border: none;
-      padding: 7px;
-      width: 80%;
-      border-radius: 5px;
-      background-color: green;
-      font-weight: 500;
-      margin-right: 20px;
-      cursor: pointer;
-      color: white;
-  }
+.messageWrapper {
+  padding: 10px;
+}
+
+.messageTop {
+  display: flex;
+  align-items: center;
+}
+
+.messageProfileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.messageInput {
+  border: none;
+  width: 80%;
+}
+
+.messageInput:focus {
+  outline: none;
+}
+
+.messageGif {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.messageGif img{
+  border: 0.5px solid #9A9A9A;
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+
+}
+
+.MessageHr {
+  margin: 20px;
+}
+
+.messageBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.messageOptionText {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.gif {
+  width: 90%;
+  margin: 20px;
+  border: 0.9px solid #9A9A9A;
+  border-radius: 5px;
+
+
+}
+
+.loadGifButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.postButton {
+  border: none;
+  padding: 7px;
+  width: 80%;
+  border-radius: 5px;
+  background-color: green;
+  font-weight: 500;
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+}

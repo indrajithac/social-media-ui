@@ -5,7 +5,8 @@ import axios from 'axios';
 
 
 
-function Giphy() {
+function Giphy(props) {
+    console.log(props);
     const [gifs, setGifs] = useState([])
     const [gifSearch, setGifSearch] = useState("")
     const [loading, setLoading] = useState(false)
@@ -45,8 +46,8 @@ function Giphy() {
         } else {
             return gifs.map(gif => {
                 return (
-                    <div key={gif.id} className='gifImg' onClick={()=>console.log(gif)}>
-                        <img src={gif.images.fixed_width_small_still.url} alt="" />
+                    <div key={gif.id} className='gifImg' onClick={()=>props.messageGif(gif)}>
+                        <img src={gif.images.fixed_width_small.url} alt="" />
                     </div>
                 );
             });
