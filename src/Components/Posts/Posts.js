@@ -1,57 +1,40 @@
 import React from 'react'
 import './Posts.css'
 
-function Posts() {
+function Posts(props) {
+    console.log(props);
+
     return (
-        <>
-        <div className="post">
-            <div className="postWrapper">
-                <div className="postTop">
-                    <div className="postTopLeft">
-                        <img
-                            className="postProfileImg"
-                            src="/assets/dp.jpeg"
-                            alt=""
-                        />
-                        <span className="postUsername">
-                            Username
-                        </span>
-                        <span className="postDate"> 5 min ago</span>
-                    </div>
-                    
-                </div>
-                <div className="postCenter">
-                    <span className="postText">Message</span>
-                    <img className="postImg" src="/assets/dp.jpeg" alt="" />
-                </div>
+        props.posts.slice(0).reverse().map((post) => {
+            return (
+                <div className="post">
+                    <div className="postWrapper">
+                        <div className="postTop">
+                            <div className="postTopLeft">
+                                <img
+                                    className="postProfileImg"
+                                    src="/assets/dp.jpeg"
+                                    alt=""
+                                />
+                                <span className="postUsername">
+                                    Username
+                                </span>
+                                <span className="postDate"> 5 min ago</span>
+                            </div>
 
-            </div>
-        </div>
-        <div className="post">
-            <div className="postWrapper">
-                <div className="postTop">
-                    <div className="postTopLeft">
-                        <img
-                            className="postProfileImg"
-                            src="/assets/dp.jpeg"
-                            alt=""
-                        />
-                        <span className="postUsername">
-                            Username
-                        </span>
-                        <span className="postDate"> 5 min ago</span>
-                    </div>
-                    
-                </div>
-                <div className="postCenter">
-                    <span className="postText">Message</span>
-                    <img className="postImg" src="/assets/dp.jpeg" alt="" />
-                </div>
+                        </div>
+                        <div className="postCenter">
+                            <span className="postText">{post.message}</span>
+                            <img className="postImg" src={post.gifClick.images.fixed_height.url} alt="loading.." />
+                        </div>
 
-            </div>
-        </div>
-        </>
-        
+                    </div>
+                </div>
+            )
+        })
+
+
+
     )
 }
 
