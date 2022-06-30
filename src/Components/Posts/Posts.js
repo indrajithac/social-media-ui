@@ -12,7 +12,7 @@ function Posts(props) {
                             <div className="postTopLeft">
                                 <img
                                     className="postProfileImg"
-                                    src="/assets/dp.jpeg"
+                                    src="https://i.pinimg.com/736x/e9/e2/78/e9e2787d0cb55d570fe1c76843506759.jpg"
                                     alt=""
                                 />
                                 <span className="postUsername">

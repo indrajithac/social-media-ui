@@ -31,7 +31,7 @@ function Message(props) {
             <form onSubmit={postHandler}>
                 <div className="messageWrapper">
                     <div className="messageTop">
-                        <img className="messageProfileImg" src="/assets/dp.jpeg" alt="" />
+                        <img className="messageProfileImg" src="https://i.pinimg.com/736x/e9/e2/78/e9e2787d0cb55d570fe1c76843506759.jpg" alt="" />
                         <input
                             value={message}
                             placeholder="Write Something..."

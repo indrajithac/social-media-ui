@@ -21,7 +21,7 @@ function Header() {
                 <div className='rightIcon'><PersonIcon /></div>
                 <div className='rightIcon'><MessageIcon /></div>
                 <div className='rightIcon'><NotificationsIcon /></div>
-                <img className='rightProfilePic' src='/assets/dp.jpeg' alt=''/>
+                <img className='rightProfilePic' src='https://i.pinimg.com/736x/e9/e2/78/e9e2787d0cb55d570fe1c76843506759.jpg' alt=''/>
             </div>
 
         </div>
