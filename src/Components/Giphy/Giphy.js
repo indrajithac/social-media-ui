@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './Giphy.css'
 import SearchIcon from '@mui/icons-material/Search';
 import axios from 'axios';
@@ -8,34 +8,50 @@ import axios from 'axios';
 function Giphy() {
     const [gifs, setGifs] = useState([])
     const [gifSearch, setGifSearch] = useState("")
+    const [loading, setLoading] = useState(false)
 
     //for fetching gifs from giphy.com
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const results = await axios("https://api.giphy.com/v1/gifs/search", {
-            params: {
-                api_key: "Kx0T9kk2dQCRk03BGGM5OVBDclmSOIEl",
-                q: gifSearch,
-                limit: 15
-            }
-        });
+        setLoading(true);
 
-        console.log(results.data.data);
-        setGifs(results.data.data);
+        try {
+            const results = await axios("https://api.giphy.com/v1/gifs/search", {
+                params: {
+                    api_key: "Kx0T9kk2dQCRk03BGGM5OVBDclmSOIEl",
+                    q: gifSearch,
+                    limit: 15
+                }
+            });
 
+            console.log(results.data.data);
+            setGifs(results.data.data);
 
+        } catch (error) {
+            console.log(error);
+            alert("Something went wrong")
+
+        }
+        setLoading(false);
     }
-   
-  
+
+
 
     const rendergifs = () => {
-        return gifs.map(gif => {
+        if (loading) {
             return (
-                <div key={gif.id} className='gifImg' >
-                    <img src={gif.images.fixed_width.url} />
-                </div>
-            );
-        });
+                <p>Loading gifs..</p>
+            )
+        } else {
+            return gifs.map(gif => {
+                return (
+                    <div key={gif.id} className='gifImg' onClick={()=>console.log(gif)}>
+                        <img src={gif.images.fixed_width_small_still.url} alt="" />
+                    </div>
+                );
+            });
+        }
+
     }
 
     return (
