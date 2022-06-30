@@ -2,7 +2,7 @@
   "name": "social-media-ui",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/indrajithac/social-media-ui",
+  "homepage": "https://indrajithac.github.io/social-media-ui",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
