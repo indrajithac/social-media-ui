@@ -49,13 +49,16 @@
   .gif{
     width: 90%;
     margin: 20px;
-    border: 0.9px solid #9A9A9A;   
+    border: 0.9px solid #9A9A9A;       
+    border-radius: 5px;
+    
+    
+  }
+  .loadGifButton{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
     cursor: pointer;
-    
   }
 
   .postButton{

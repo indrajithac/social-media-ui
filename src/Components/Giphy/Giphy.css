@@ -1,0 +1,27 @@
+.gifContainer{
+    display: flex;
+    justify-content: center;
+}
+.gifSearchBar{
+    width: 50%;
+    height: 30px;
+    background-color: #F0F2F5;
+    border-radius: 30px;
+    color: #65676B;
+    display: flex;
+    align-items: center; 
+     
+}
+.searchIcon{
+    margin-right: 5px;
+    font-size: 24px !important;
+}
+.searchInput {
+    border: none;
+    background-color: #F0F2F5;
+    width: 80%;
+    text-align: center;
+}
+.searchInput:focus{
+    outline: none;
+}
