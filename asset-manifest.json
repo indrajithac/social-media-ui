@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/indrajithac/social-media-ui/static/css/main.d3c468b7.css",
+    "main.js": "/indrajithac/social-media-ui/static/js/main.63ef5a72.js",
+    "index.html": "/indrajithac/social-media-ui/index.html",
+    "main.d3c468b7.css.map": "/indrajithac/social-media-ui/static/css/main.d3c468b7.css.map",
+    "main.63ef5a72.js.map": "/indrajithac/social-media-ui/static/js/main.63ef5a72.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3c468b7.css",
+    "static/js/main.63ef5a72.js"
+  ]
+}
